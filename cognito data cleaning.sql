@@ -47,3 +47,13 @@ select distinct state, count(state) as total_state
 from cognitodata
 group by state
 Order by total_state desc
+
+SELECT 
+ MIN(UserCreatedate) AS start_date,
+ MAX(UserCreatedate) AS end_date
+FROM cognitodata
+
+
+
+
+    UserLastModifiedDate TIMESTAMP,
