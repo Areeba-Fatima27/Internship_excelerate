@@ -44,3 +44,9 @@ Order by total_apply_date desc
 
 select distinct count(status) as no_ofstatus
 from learner_opportunity	
+
+
+SELECT 
+ MIN(apply_date) AS start_date,
+ MAX(apply_date) AS end_date
+FROM learner_opportunity
